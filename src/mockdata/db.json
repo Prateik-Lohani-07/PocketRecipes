@@ -1,0 +1,99 @@
+{
+	"recipes": [
+		{
+			"id": "1",
+			"name": "Garlic Butter Pasta",
+			"steps": [
+				"Boil pasta until al dente.",
+				"Heat butter and olive oil in a pan.",
+				"Add minced garlic and sauté until fragrant.",
+				"Toss pasta with garlic butter and serve."
+			],
+			"desc": "A simple, rich pasta tossed in aromatic garlic butter.",
+			"video_link": "https://youtu.be/lagDGJnKpdI?si=8mmlWIuas_unD77c",
+			"ingredients": [
+				"200g pasta",
+				"3 tbsp butter",
+				"4 cloves garlic",
+				"1 tbsp olive oil"
+			],
+			"image": "https://www.inspiredtaste.net/wp-content/uploads/2025/07/Pancake-Recipe-1.jpg"
+		},
+		{
+			"id": "2",
+			"name": "Classic Pancakes",
+			"steps": [
+				"Whisk flour, sugar, baking powder, and salt.",
+				"Mix milk, egg, and melted butter separately.",
+				"Combine wet and dry ingredients.",
+				"Cook spoonfuls on a hot pan until golden."
+			],
+			"desc": "Soft, fluffy pancakes perfect for breakfast.",
+			"video_link": "https://youtu.be/9zCVCL4V8JQ?si=kXqKUomsRn_VGasT",
+			"ingredients": [
+				"1 cup flour",
+				"1 cup milk",
+				"1 egg",
+				"2 tbsp butter"
+			],
+			"image": "https://www.inspiredtaste.net/wp-content/uploads/2025/07/Pancake-Recipe-1.jpg"
+		},
+		{
+			"id": "3",
+			"name": "Chicken Fried Rice",
+			"steps": [
+				"Cook chicken cubes in oil until browned.",
+				"Add veggies and sauté.",
+				"Add cooked rice and mix well.",
+				"Add soy sauce and stir fry until combined."
+			],
+			"desc": "Quick and tasty fried rice with chicken and veggies.",
+			"video_link": "https://youtu.be/LxgbGnQ9bPc?si=Tl8EhxmuVzY3hg7J",
+			"ingredients": [
+				"1 cup cooked rice",
+				"150g chicken",
+				"1 cup mixed vegetables",
+				"2 tbsp soy sauce"
+			],
+			"image": "https://www.inspiredtaste.net/wp-content/uploads/2025/07/Pancake-Recipe-1.jpg"
+		},
+		{
+			"id": "4",
+			"name": "Masala Omelette",
+			"steps": [
+				"Whisk eggs with salt and spices.",
+				"Add chopped onion, tomato, and coriander.",
+				"Pour mixture into a heated pan.",
+				"Cook on both sides until golden."
+			],
+			"desc": "A spicy Indian-style omelette packed with flavor.",
+			"video_link": "https://youtu.be/uhjH7tlM1Jw?si=3wAKpBteYXsP9CoK",
+			"ingredients": [
+				"2 eggs",
+				"1 onion",
+				"1 tomato",
+				"Coriander leaves"
+			],
+			"image": "https://www.inspiredtaste.net/wp-content/uploads/2025/07/Pancake-Recipe-1.jpg"
+		},
+		{
+			"id": "5",
+			"name": "Chocolate Mug Cake",
+			"steps": [
+				"Mix flour, sugar, cocoa, and baking powder in a mug.",
+				"Add milk, oil, and vanilla.",
+				"Mix until smooth.",
+				"Microwave for 90 seconds and serve warm."
+			],
+			"desc": "A quick, one-mug chocolate cake ready in minutes.",
+			"video_link": "https://youtu.be/2at7z3ZX_lI?si=_6BmWtl58l7b3-N_",
+			"ingredients": [
+				"4 tbsp flour",
+				"3 tbsp sugar",
+				"2 tbsp cocoa powder",
+				"4 tbsp milk"
+			],
+			"image": "https://www.inspiredtaste.net/wp-content/uploads/2025/07/Pancake-Recipe-1.jpg"
+		}
+	]
+}
