@@ -1,7 +1,8 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { theme } from '@/src/utils/theme';
+import { theme } from '@/src/styles/theme';
+import Label from '../../labels/Label';
 
 interface DetailsHeaderProps {
 	name: string;
@@ -17,10 +18,11 @@ export default function DetailsHeader({ name, desc, time }: DetailsHeaderProps) 
 				<Text style={styles.descText}>{desc}</Text>
 			</View>
 			
-			<View style={styles.cookTimeContainer}>
-				<Text><Ionicons name="timer-outline" size={18} color="white" /></Text>
-				<Text style={styles.timeText}>{time}</Text>
-			</View>
+			
+			<Label 
+				text={time} 
+				icon={(<Ionicons name="timer-outline" size={18} />)} 
+			/>
 		</View>
 	)
 }

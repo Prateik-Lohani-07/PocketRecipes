@@ -1,6 +1,6 @@
 import { Recipe } from '@/src/beans/Recipe';
 import RecipeCard from '@/src/components/RecipeCard';
-import { theme } from '@/src/utils/theme';
+import { theme } from '@/src/styles/theme';
 import React, { useRef, useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 

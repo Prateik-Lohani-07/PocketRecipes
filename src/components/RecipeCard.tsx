@@ -1,5 +1,5 @@
 import { Recipe } from '@/src/beans/Recipe';
-import { theme } from '@/src/utils/theme';
+import { theme } from '@/src/styles/theme';
 import { Href, useRouter } from 'expo-router';
 import React from 'react';
 import { Dimensions, Image, StyleSheet, Text, View } from 'react-native';

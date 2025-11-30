@@ -6,6 +6,7 @@ export default function HomeLayout() {
 		<Stack>
 			<Stack.Screen name='index' />
 			<Stack.Screen name='[recipeId]' />
+			<Stack.Screen name='modal' options={{ presentation: 'modal' }} />
 		</Stack>
 	)
 }

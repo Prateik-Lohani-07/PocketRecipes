@@ -1,11 +1,11 @@
 import { Recipe } from '@/src/beans/Recipe';
 import RecipeCardList from '@/src/components/RecipeCardList';
 import { getAllRecipes, storeDefaultRecipes } from '@/src/services/recipeService';
-import { theme } from '@/src/utils/theme';
+import { theme } from '@/src/styles/theme';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Stack } from 'expo-router';
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, Text } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function Home() {
@@ -34,11 +34,10 @@ export default function Home() {
 	return (
 		<>
 			<Stack.Screen options={{ title: 'Home' }} />
-			<SafeAreaView style={ styles.container }>
-
+			<View style={ styles.container }>
 				<Text style={[ styles.headerText, { marginLeft: 20 } ]}>Handpicked For You! 😋</Text>
 				<RecipeCardList recipes={recipes} />
-			</SafeAreaView>
+			</View>
 		</>
 	)
 }
@@ -48,8 +47,10 @@ const styles = StyleSheet.create({
 		flexDirection: 'column',
 		gap: 8,
 		width: '100%',
+		paddingTop: 16,
 	},
 	headerText: {
 		fontSize: theme.text.l,
+		fontWeight: 'bold',
 	},
 })
