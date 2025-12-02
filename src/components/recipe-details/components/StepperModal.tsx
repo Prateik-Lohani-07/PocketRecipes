@@ -1,7 +1,7 @@
 import { Button, Modal, NativeSyntheticEvent, StyleSheet, Text, View } from 'react-native'
-import React, { useState } from 'react'
+import React from 'react'
 import Stepper from '../../stepper/Stepper';
-import { header, mainHeader, subHeader1, subHeader2 } from '@/src/styles/text';
+import { mainHeader, subHeader2 } from '@/src/styles/text';
 import { theme } from '@/src/styles/theme';
 import { flex } from '@/src/styles/container';
 

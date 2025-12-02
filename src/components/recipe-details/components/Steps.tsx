@@ -1,13 +1,11 @@
-import { Button, Modal, StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
-import { onPrimary, onTertiary, subHeader1, subHeader2, subHeader3 } from '@/src/styles/text';
+import { onPrimary, onTertiary, subHeader1, subHeader3 } from '@/src/styles/text';
 import { flex } from '@/src/styles/container';
 import Step from './Step';
-import PushButton from '../../buttons/PushButton';
-import { bgAccent, bgTertiary } from '@/src/styles/bg';
+import { bgTertiary } from '@/src/styles/bg';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { theme } from '@/src/styles/theme';
-import Stepper from '../../stepper/Stepper';
 import StepperModal from './StepperModal';
 import { WavePulseButton } from '../../buttons/WavePulseButton';
 

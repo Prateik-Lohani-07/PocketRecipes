@@ -2,7 +2,7 @@ import { Animated, Easing, Pressable, StyleSheet, Text, View } from 'react-nativ
 import React, { useRef, useState } from 'react'
 import { flex } from '@/src/styles/container';
 import { bgAccent, bgCard } from '@/src/styles/bg';
-import { bold, onCard, onPrimary, subHeader2, subHeader3 } from '@/src/styles/text';
+import { bold, onCard, onPrimary, subHeader3 } from '@/src/styles/text';
 import AntDesign from '@expo/vector-icons/AntDesign';
 
 interface StepProps {

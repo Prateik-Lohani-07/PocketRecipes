@@ -1,14 +1,14 @@
 import { Recipe } from '@/src/beans/Recipe';
-import RecipeCard from '@/src/components/RecipeCard';
+import RecipeCard from '../../../../recipe-card/RecipeCard';
 import { theme } from '@/src/styles/theme';
-import React, { useRef, useState } from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { ScrollView, StyleSheet, View } from 'react-native';
 
-interface RecipeCardListProps {
+interface HandPickedListProps {
 	recipes: Recipe[];
 };
 
-export default function RecipeCardList({ recipes }: RecipeCardListProps) {
+export default function HandPickedList({ recipes }: HandPickedListProps) {
 	return (
 		<View style={[ styles.mainContainer ]}>
 			<ScrollView 
@@ -22,6 +22,7 @@ export default function RecipeCardList({ recipes }: RecipeCardListProps) {
 							recipe={recipe} 
 							href={`./${recipe.id}`}
 							key={recipe.id} 
+							horizontal={true}
 						/>
 					))
 				}

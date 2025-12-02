@@ -1,25 +1,17 @@
 import { Recipe } from '@/src/beans/Recipe';
 import { theme } from '@/src/styles/theme';
-import { Href, useRouter } from 'expo-router';
 import React from 'react';
-import { Dimensions, Image, StyleSheet, Text, View } from 'react-native';
-import PushButton from './buttons/PushButton';
+import { Dimensions, Image, PressableProps, StyleSheet, Text, View } from 'react-native';
+import PushButton from '../buttons/PushButton';
 
 interface RecipeCardProps {
 	recipe: Recipe;
-	href: Href;
+	onPress: PressableProps['onPress'];
 };
 
-export default function RecipeCard({ recipe, href }: RecipeCardProps) {
-
-	const router = useRouter();
-
-	const onPress = () => {
-		router.navigate(href);
-	}
-
+export default function RecipeCardHorizontal({ recipe, onPress }: RecipeCardProps) {
 	return (
-		<PushButton onPress={onPress} containerStyle={styles.mainContainer}>
+		<PushButton onPress={onPress} containerStyle={{...styles.mainContainer}}>
 			<View style={styles.contentContainer}>
 				
 				<Text style={styles.cardHeaderText}>
@@ -37,13 +29,12 @@ export default function RecipeCard({ recipe, href }: RecipeCardProps) {
 
 const styles = StyleSheet.create({
 	mainContainer: {
-		width: Dimensions.get('window').width * 0.8,
+		width: Dimensions.get('screen').width * 0.8, 
 		height: '100%',
 		borderRadius: theme.rounded.m,
 		padding: theme.spacing.m,
 		borderWidth: 2,
 		backgroundColor: theme.colors.card,
-		boxShadow: [{ offsetX: 0, offsetY: 2, blurRadius: 4, color: '#FF7349', spreadDistance: 0.5 }],
 		overflow: 'visible'
 	},
 	contentContainer: {

@@ -3,10 +3,11 @@ import { Tabs } from "expo-router";
 import 'reflect-metadata';
 import { StatusBar } from 'expo-status-bar';
 import { theme } from '../styles/theme';
+import { PaperProvider } from "react-native-paper";
 
 export default function RootLayout() {
 	return (
-		<>
+		<PaperProvider>
 			<Tabs 
 				screenOptions={{ headerShown: false, tabBarActiveTintColor: theme.colors.primary }} 
 				initialRouteName="(home)"
@@ -18,6 +19,7 @@ export default function RootLayout() {
 						tabBarIcon: ({ color, size }) => <AntDesign name="home" size={size} color={color} />,
 					}}
 				/>
+				
 				<Tabs.Screen 
 					name="(profile)" 
 					options={{
@@ -28,6 +30,6 @@ export default function RootLayout() {
 			</Tabs>
 
 			<StatusBar backgroundColor={theme.colors.primary} />
-		</>
+		</PaperProvider>
 	);
 }
